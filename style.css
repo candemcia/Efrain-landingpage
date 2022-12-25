@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 60px;
+    border-bottom: solid;
+    border-width: 0.5px;
+    border-color: #a8a8a8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.navbar img {
+    display: flex;
+    margin-left: 30px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px;
+}
+
+ul a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 550;
+    font-size: 14px;
+    align-items: center;
+ 
+}
+
+.action {
+    margin-left: 500px;
+}
+
+.action a {
+    border-color: #FFBB55;
+    border-style: solid;
+    border-width: 2px;
+    padding: 8px 8px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    gap: 30px;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero-info h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero-info h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.hero-info p {
+    font-size: 15px;
+    font-weight: 480;
+    line-height: 30px;
+}
+
+.hero-info a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 2px;
+    padding: 12px 12px;
+    border-radius: 50px;
+    text-align: center;
+    width: 140px;
+    background: rgb(255,187,85);
+    background: linear-gradient(90deg, rgba(255,187,85,1) 51%, rgba(255,124,0,1) 80%);
+}
+
+.about-us {
+    background: url(.assets/frutososc.png);
+    background-size: cover;
+    color: white;
+    padding: 50px;
+    height: 300px;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.about-us p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 28px;
+    margin: 0px 100px;
+
+}
+
+.products h2 {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.products p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.products a {
+    color: #000000;
+    font-size: 14px;
+    border-color: #FFBB55;
+    border-style: solid;
+    border-width: 2px;
+    padding: 6px 6px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    margin-left: 650px;
+}
+
+.sec-pro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 50px;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    height: 300px;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.box-description {
+    line-height: 5px;
+    padding: 10px;
+}
+
+.box-description h4 {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.box-description p {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    opacity: 0.4;
+}
+
+.box-info span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    background: rgb(255,187,85);
+    background: linear-gradient(90deg, rgba(255,187,85,1) 51%, rgba(255,124,0,1) 80%);
+    padding: 8px 30px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+
+
+
+

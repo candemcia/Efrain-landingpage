@@ -166,6 +166,7 @@ ul a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 240px;
     height: 300px;
     border-radius: 1rem;
@@ -285,4 +286,286 @@ footer p {
 
 .menu-hamb:checked + .hamb {
     display: block;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px) {
+    #hero {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 80px 80px;
+        gap: 2px;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 80px 80px;
+        gap: 2px;
+    }
+    
+}
+
+@media (min-width: 520px) and (max-width:685px) {
+    #hero {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 60px;
+        gap: 2px;
+    }
+    
+    .hero-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hero-info h1 {
+        font-size: 50px;
+        font-weight: 700;
+    }
+    
+    .hero-info h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    .hero-info p {
+        font-size: 15px;
+        font-weight: 480;
+        line-height: 30px;
+    }
+    
+    .hero-info a {
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        border-style: solid;
+        border-width: 2px;
+        padding: 12px 12px;
+        border-radius: 50px;
+        text-align: center;
+        width: 140px;
+        background: rgb(255,187,85);
+        background: linear-gradient(90deg, rgba(255,187,85,1) 51%, rgba(255,124,0,1) 80%);
+    }
+
+    .about-us {
+        display: flex;
+        justify-content: center;
+        background: url(.assets/frutososc.png);
+        background-size: cover;
+        color: white;
+        padding: 50px;
+        height: 380px;
+    }
+    
+    .about-us h2 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 800;
+    }
+    
+    .about-us p {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 22px;
+
+    }
+}
+
+@media (max-width: 478px) {
+    .about-us {
+        display: flex;
+        justify-content: center;
+        background: url(.assets/frutososc.png);
+        background-size: cover;
+        color: white;
+        padding: 30px;
+        height: 400px;
+    }
+    
+    .about-us h2 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 800;
+    }
+    
+    .about-us p {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 22px;
+
+    }
+}
+
+@media (min-width: 453px) and (max-width: 519px) {
+    .about-us {
+        display: flex;
+        justify-content: center;
+        background: url(.assets/frutososc.png);
+        background-size: cover;
+        color: white;
+        padding: 30px;
+        height: 380px;
+    }
+    
+    .about-us h2 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 800;
+    }
+    
+    .about-us p {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 22px;
+
+    }
+}
+
+@media (min-width: 321px) and (max-width: 414px) {
+    #hero {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 60px;
+        gap: 2px;
+    }
+    
+    .hero-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hero-info h1 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    
+    .hero-info h2 {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .hero-info p {
+        font-size: 12px;
+        font-weight: 480;
+        line-height: 30px;
+    }
+
+    .about-us {
+        display: flex;
+        justify-content: center;
+        background: url(.assets/frutososc.png);
+        background-size: cover;
+        color: white;
+        padding: 30px;
+        height: 400px;
+    }
+    
+    .about-us h2 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
+    .about-us p {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    #hero {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 40px;
+        gap: 30px;
+    }
+    
+    .hero-info {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .hero-info h1 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    .hero-info h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    
+    .hero-info p {
+        font-size: 12px;
+        font-weight: 480;
+        line-height: 30px;
+    }
+    
+    .hero-info a {
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+        border-style: solid;
+        border-width: 2px;
+        padding: 12px 12px;
+        border-radius: 50px;
+        text-align: center;
+        width: 140px;
+        background: rgb(255,187,85);
+        background: linear-gradient(90deg, rgba(255,187,85,1) 51%, rgba(255,124,0,1) 80%);
+    }
+
+    .about-us {
+        display: flex;
+        justify-content: center;
+        background: url(.assets/frutososc.png);
+        background-size: cover;
+        color: white;
+        padding: 50px;
+        height: 500px;
+    }
+    
+    .about-us h2 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 800;
+    }
+    
+    .about-us p {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 18px;
+
+    }
+
+    .box-description h4 {
+        font-size: 14px;
+        line-height: 30px;
+    }
 }

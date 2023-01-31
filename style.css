@@ -33,8 +33,12 @@ header {
     justify-content: space-around;
     align-items: center;
     margin-top: 5px;
-    gap: 50px;
-    padding: 20px;
+    gap: 10px;
+    
+}
+
+.nav-list {
+    gap: 30px;
 }
 
 .nav-list {
@@ -53,7 +57,6 @@ header {
 }
 
 ul a {
-    display: flex;
     text-decoration: none;
     color: #000000;
     font-weight: 550;
@@ -75,6 +78,7 @@ ul a {
     padding: 8px 8px;
     border-radius: 10px;
     text-align: center;
+    
 }
 
 /* HERO */

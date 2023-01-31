@@ -131,6 +131,7 @@ ul a {
 
 /* CONOCENOS */
 
+
 .about-us {
     flex-wrap: wrap;
     background: url(.assets/frutososc.png);
@@ -239,7 +240,11 @@ ul a {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    gap: 80px;
+    gap: 90px;
+}
+
+.datos a {
+    padding: 0px 20px;
 }
 
 .contact div {
@@ -268,7 +273,6 @@ footer h3 {
 footer p {
     font-size: 12px;
 }
-
 
 
 

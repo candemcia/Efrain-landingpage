@@ -20,11 +20,9 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    height: 60px;
-    border-bottom: solid;
-    border-width: 0.5px;
-    border-color: #a8a8a8;
+    height: 80px;
     width: 100%;
+    box-shadow: 0px 12px 20px -6px rgba(66, 66, 66, 0.16);
 }
 
 .navbar,
@@ -135,6 +133,7 @@ ul li:hover:after {
 .hero-info h2 {
     font-size: 18px;
     font-weight: 700;
+    color: #000000;
 }
 
 
@@ -184,8 +183,7 @@ ul li:hover:after {
     flex-wrap: wrap;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     background: rgb(255,187,85);
-    background: rgb(255,187,85);
-    background: linear-gradient(180deg, rgba(255,187,85,1) 15%, rgba(255,162,52,1) 45%, rgba(255,151,37,1) 62%, rgba(255,124,0,1) 100%);
+    background: linear-gradient(0deg, rgba(255,187,85,1) 56%, rgba(255,162,52,1) 76%, rgba(255,151,37,1) 100%);
     border-radius: 10rem 10rem 0 0;
     color: white;
     padding: 50px;
@@ -206,7 +204,6 @@ ul li:hover:after {
     padding-top: 30px;
     line-height: 28px;
     margin: 0px 100px;
-
 }
 
 .card-des {
@@ -247,20 +244,34 @@ ul li:hover:after {
     line-height: 30px;
 }
 
+
 /* PRODUCTOS */
 
+.products {
+    position: relative;
+    background: #FFBB55;
+}
+
+.products::before {
+content: '';
+position: absolute;
+bottom: 0;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 100px 100px 0 100px;
+border-color: #FFBB55 transparent transparent transparent;
+left: 50%;
+transform: translateX(-50%) translateY(100%);  
+}
+
+
 .products h2 {
-    padding-top: 80px;
+    padding-top: 20px;
     text-align: center;
     font-size: 30px;
     font-weight: 800;
-}
-
-.products p {
-    font-size: 15px;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 30px;
+    color: #ffffff;
 }
 
 .sec-pro {
@@ -282,6 +293,7 @@ ul li:hover:after {
     height: 300px;
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #ffffff;
 }
 
 .box-description {
@@ -299,6 +311,7 @@ ul li:hover:after {
     font-weight: 600;
     padding: 10px;
     opacity: 0.4;
+    text-align: center;
 }
 
 .box-info span {
@@ -307,7 +320,6 @@ ul li:hover:after {
     align-items: center;
     font-size: 12px;
     font-weight: 600;
-    background: rgb(255,187,85);
     background: linear-gradient(90deg, rgba(255,187,85,1) 51%, rgba(255,124,0,1) 80%);
     padding: 8px 30px;
     border-radius: 20px;
@@ -332,11 +344,21 @@ ul li:hover:after {
 
 /* CONTACTO */
 
+.contact {
+    margin-top: 100px;
+}
 
 .contact h2 {
     text-align: center;
     font-size: 30px;
     font-weight: 800;
+    padding: 20px 0px;
+}
+
+.contact p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
     padding-bottom: 60px;
 }
 
@@ -370,7 +392,7 @@ footer {
     align-items: center;
     text-align: center;
     color: #d4d4d4;
-    margin: 80px;
+    margin: 50px;
     line-height: 40px;
 }
 
@@ -498,7 +520,7 @@ footer p {
         justify-content: center;
         color: white;
         padding: 50px;
-        height: 380px;
+        height: 1500px;
     }
     
     .about-us h2 {
@@ -513,6 +535,25 @@ footer p {
         text-align: center;
         line-height: 22px;
     }
+
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .card h4 {
+        font-size: 14px;
+        line-height: 15px;
+        padding-top: 20px ;
+    }
+    
+    .card p {
+        font-size: 12px;
+        margin: 0;
+        padding: 20px;
+        line-height: 30px;
+    }
+
 }
 
 @media (max-width: 478px) {
@@ -543,8 +584,8 @@ footer p {
         display: flex;
         justify-content: center;
         color: white;
-        padding: 30px;
-        height: 400px;
+        padding: 50px;
+        height: 1500px;
     }
     
     .about-us h2 {
@@ -554,12 +595,30 @@ footer p {
     }
     
     .about-us p {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         text-align: center;
         line-height: 22px;
-
     }
+
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .card h4 {
+        font-size: 14px;
+        line-height: 15px;
+        padding-top: 20px ;
+    }
+    
+    .card p {
+        font-size: 12px;
+        margin: 0;
+        padding: 20px;
+        line-height: 30px;
+    }
+
 }
 
 @media (min-width: 453px) and (max-width: 519px) {
@@ -591,8 +650,8 @@ footer p {
         display: flex;
         justify-content: center;
         color: white;
-        padding: 30px;
-        height: 380px;
+        padding: 50px;
+        height: 1500px;
     }
     
     .about-us h2 {
@@ -602,12 +661,30 @@ footer p {
     }
     
     .about-us p {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         text-align: center;
         line-height: 22px;
-
     }
+
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .card h4 {
+        font-size: 14px;
+        line-height: 15px;
+        padding-top: 20px ;
+    }
+    
+    .card p {
+        font-size: 12px;
+        margin: 0;
+        padding: 20px;
+        line-height: 30px;
+    }
+
 }
 
 @media (min-width: 321px) and (max-width: 414px) {
@@ -671,22 +748,41 @@ footer p {
         display: flex;
         justify-content: center;
         color: white;
-        padding: 30px;
-        height: 400px;
+        padding: 50px;
+        height: 1800px;
     }
     
     .about-us h2 {
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 800;
     }
     
     .about-us p {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         text-align: center;
-        line-height: 15px;
+        line-height: 22px;
     }
+
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .card h4 {
+        font-size: 14px;
+        line-height: 15px;
+        padding-top: 20px ;
+    }
+    
+    .card p {
+        font-size: 12px;
+        margin: 0;
+        padding: 20px;
+        line-height: 30px;
+    }
+
 }
 
 @media (max-width: 320px) {
@@ -731,7 +827,7 @@ footer p {
     }
     
     .hero-info h1 {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 700;
     }
     
@@ -741,7 +837,7 @@ footer p {
     }
     
     .hero-info p {
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 480;
         line-height: 30px;
     }
@@ -759,13 +855,12 @@ footer p {
         background: rgb(255,187,85);
         background: linear-gradient(90deg, rgba(255,187,85,1) 51%, rgba(255,124,0,1) 80%);
     }
-
     .about-us {
         display: flex;
         justify-content: center;
         color: white;
         padding: 50px;
-        height: 500px;
+        height: 1800px;
     }
     
     .about-us h2 {
@@ -778,8 +873,25 @@ footer p {
         font-size: 12px;
         font-weight: 500;
         text-align: center;
-        line-height: 18px;
+        line-height: 22px;
+    }
 
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .card h4 {
+        font-size: 14px;
+        line-height: 15px;
+        padding-top: 20px ;
+    }
+    
+    .card p {
+        font-size: 12px;
+        margin: 0;
+        padding: 20px;
+        line-height: 30px;
     }
 
     .box-description h4 {

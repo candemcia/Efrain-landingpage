@@ -87,6 +87,7 @@ ul li:hover:after {
 
 #toggle-menu {
     display: none;
+    background-color: white;
 }
 
 .action a {
@@ -115,28 +116,30 @@ ul li:hover:after {
     flex-wrap: wrap;
     align-items: center;
     margin: 40px;
-    gap: 30px;
+    gap: 50px;
 }
 
 .hero-info {
+    flex: 1;
+    margin-left: 80px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .hero-info h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
 }
 
 .hero-info h2 {
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 
 .hero-info p {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 480;
     line-height: 30px;
 }
@@ -160,6 +163,11 @@ ul li:hover:after {
     transition: transform 0.3s ease;
 }
 
+.hero-img {
+    flex: 1;
+    margin-right: 50px;
+}
+
 .ver {
     opacity: 0;
     animation: fade 1s ease-in forwards, slide-up 1.1s ease-in-out;
@@ -172,15 +180,17 @@ ul li:hover:after {
 
 /* CONOCENOS */
 
-
 .about-us {
     flex-wrap: wrap;
-    background: url(.assets/frutososc.png);
-    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    background: rgb(255,187,85);
+    background: rgb(255,187,85);
+    background: linear-gradient(180deg, rgba(255,187,85,1) 15%, rgba(255,162,52,1) 45%, rgba(255,151,37,1) 62%, rgba(255,124,0,1) 100%);
+    border-radius: 10rem 10rem 0 0;
     color: white;
     padding: 50px;
-    height: 300px;
     width: 100%;
+    margin-top: 60px;
 }
 
 .about-us h2 {
@@ -199,6 +209,44 @@ ul li:hover:after {
 
 }
 
+.card-des {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-top: 80px;
+    gap: 100px;
+    color: #000000;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #ffffff;
+    padding-top: 20px ;
+}
+
+.card h4 {
+    font-size: 18px;
+    line-height: 15px;
+    padding-top: 20px ;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 0;
+    padding: 20px;
+    line-height: 30px;
+}
+
 /* PRODUCTOS */
 
 .products h2 {
@@ -213,7 +261,6 @@ ul li:hover:after {
     font-weight: 500;
     text-align: center;
     padding-top: 30px;
-
 }
 
 .sec-pro {
@@ -285,6 +332,7 @@ ul li:hover:after {
 
 /* CONTACTO */
 
+
 .contact h2 {
     text-align: center;
     font-size: 30px;
@@ -306,11 +354,13 @@ ul li:hover:after {
 }
 
 .contact div {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 200px;
 }
+
 
 /* FOOTER */
 
@@ -361,7 +411,7 @@ footer p {
     
 }
 
-@media (min-width: 520px) and (max-width:685px) {
+@media (min-width: 520px) and (max-width:696px) {
     .navbar,
     .nav-list {
         display: flex;
@@ -388,6 +438,7 @@ footer p {
 
     .navbar i {
         display: block;
+
     }
 
     #toggle-menu:checked ~ .nav-list {
@@ -410,19 +461,20 @@ footer p {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .hero-info h1 {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 700;
     }
     
     .hero-info h2 {
-        font-size: 30px;
+        font-size: 18px;
         font-weight: 700;
     }
     
+    
     .hero-info p {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 480;
         line-height: 30px;
     }
@@ -444,8 +496,6 @@ footer p {
     .about-us {
         display: flex;
         justify-content: center;
-        background: url(.assets/frutososc.png);
-        background-size: cover;
         color: white;
         padding: 50px;
         height: 380px;
@@ -492,8 +542,6 @@ footer p {
     .about-us {
         display: flex;
         justify-content: center;
-        background: url(.assets/frutososc.png);
-        background-size: cover;
         color: white;
         padding: 30px;
         height: 400px;
@@ -542,8 +590,6 @@ footer p {
     .about-us {
         display: flex;
         justify-content: center;
-        background: url(.assets/frutososc.png);
-        background-size: cover;
         color: white;
         padding: 30px;
         height: 380px;
@@ -614,7 +660,7 @@ footer p {
         font-size: 12px;
         font-weight: 700;
     }
-
+    
     .hero-info p {
         font-size: 12px;
         font-weight: 480;
@@ -624,8 +670,6 @@ footer p {
     .about-us {
         display: flex;
         justify-content: center;
-        background: url(.assets/frutososc.png);
-        background-size: cover;
         color: white;
         padding: 30px;
         height: 400px;
@@ -687,15 +731,14 @@ footer p {
     }
     
     .hero-info h1 {
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 700;
     }
     
     .hero-info h2 {
-        font-size: 30px;
+        font-size: 12px;
         font-weight: 700;
     }
-    
     
     .hero-info p {
         font-size: 12px;
@@ -720,8 +763,6 @@ footer p {
     .about-us {
         display: flex;
         justify-content: center;
-        background: url(.assets/frutososc.png);
-        background-size: cover;
         color: white;
         padding: 50px;
         height: 500px;
@@ -777,6 +818,11 @@ footer p {
 }
 
 .hero-info h1 {
+    animation: fade 1s ease-in,
+    slide-up 1.3s ease-in-out;
+}
+
+.hero-info h2 {
     animation: fade 1s ease-in,
     slide-up 1.3s ease-in-out;
 }
